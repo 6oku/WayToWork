@@ -1,0 +1,118 @@
+
+.layoutTwo{
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 3vh;
+    height: 100%;
+    width: 80%;
+    padding: 3vh;
+    margin: 3vh;
+    height: 95vh;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgba(36, 35, 35, 0.24);
+}
+
+
+
+.layout{
+    
+    top:0;
+    bottom: 0;
+    padding: 3vh;
+    margin: 3vh;
+    width: 15%;
+    height: 95vh;
+    background-color: white;
+    border-radius: 1rem;
+    overflow-x: hidden;
+    box-shadow: 0 3px 10px rgba(36, 35, 35, 0.24);
+
+}
+
+h4{
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #356efd;
+    padding: 4rem;
+    margin: 1rem;
+    
+}
+
+.logo{
+    text-align: center;
+}
+
+.layout a {
+    padding:6px 8px 6px 16px;
+    text-decoration: none;
+    font-size:20px;
+    display:block;
+}
+
+.layout a:hover{
+    opacity: 100%;
+    transform: translateY(-2px);
+}	
+
+hr{
+width: 100%;
+}
+
+.sideNavLogout{
+    bottom: 0;
+    position: absolute;
+}
+
+
+.button-3:disabled {
+    pointer-events: none;
+  }
+  
+  .button-3:hover {
+    color:  #EEF3FA;
+    background-color:#356efd;
+    box-shadow: rgba(68, 68, 68, 0.096) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-3:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+  .button-3 {
+    appearance: none;
+    background-color: transparent;
+    border: 3px solid #356efd;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #356efd;
+    cursor: pointer;
+    display: inline-block;
+    font-family: forma-djr-display, sans-serif;
+    font-size: 2vh;
+    font-weight: 600;
+    line-height: normal;
+    margin: .75rem;
+    min-height: 10px;
+    min-width: 1rem;
+    outline: none;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width:90%;
+    will-change: transform;
+  }
+
+
+
+

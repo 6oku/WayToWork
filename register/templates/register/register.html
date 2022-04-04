@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block title %} Create an Account {% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+
+ <div class = "greypanelThree" style="padding: 2rem;"> 
+
+
+		<br>
+		<svg xmlns="http://www.w3.org/2000/svg" width="281.279" height="36" viewBox="0 0 281.279 36">
+			<text id="Create_an_Account" data-name="Create an Account" transform="translate(47.279 27)" font-size="30" font-family="FormaDJRDisplay-Medium, Forma DJR Display" font-weight="500"><tspan x="0" y="0">Create an Account</tspan></text>
+			<g id="Group_63" data-name="Group 63" transform="translate(0 0.446)">
+			  <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="5.475" cy="5.475" rx="5.475" ry="5.475" transform="translate(11.304 7.489)" fill="#356efd"/>
+			  <path id="Path_4" data-name="Path 4" d="M19.279,2.5A16.779,16.779,0,1,0,36.058,19.279,16.794,16.794,0,0,0,19.279,2.5Zm8.972,27.129v-.671a6.467,6.467,0,0,0-6.464-6.464H16.736a6.467,6.467,0,0,0-6.464,6.464v.671a13.723,13.723,0,1,1,17.98,0Z" transform="translate(-2.5 -2.5)" fill="#356efd"/>
+			</g>
+		  </svg>
+		  
+		  
+	  <br><br>
+
+	  <p>
+		<form method="POST" class="form-group">
+			{% csrf_token %}
+			{{ form|crispy }}
+			<br>
+			<p style="color: rgb(0, 0, 0); width: 45vh;"> Already have an account? <br><a href="/Login"> <u>Sign in Here</u></a></p>
+				<br>
+			<button type="submit" class="button-2">Register</button>
+			</form>
+		</p>
+	
+		
+ </div>
+
+
+{% endblock %}

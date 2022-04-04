@@ -1,0 +1,8 @@
+<h3>Notes</h3>
+
+<ul>
+{% for post in object_list %}
+    <li><a href="{% url 'details-note' post.pk %}">{{post.title}}</a>
+    </li><br>
+{% endfor%}
+</ul>

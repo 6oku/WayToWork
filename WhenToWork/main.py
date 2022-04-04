@@ -1,0 +1,1 @@
+from seniorCapstone.wsgi import main as app

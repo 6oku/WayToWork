@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %} 
+
+<html lang="en">
+	
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productivity Dashboard</title>
+    
+    
+    <!-- Static CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bulma.css' %}">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
+
+
+ 	<!-- Fonts  -->
+   <link rel="stylesheet" href="https://use.typekit.net/rbq7bes.css">
+
+
+
+  </head>
+
+<body style="background-color: transparent;">
+  {% if user.is_authenticated %}
+  <!-- <nav class="navbar sticky-top navbar-expand-lg;" style="background:white" >
+
+
+    <div class="container-fluid">
+      
+
+      <a class="navbar-brand" href= "/dashboard/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="207.318" height="36.428" viewBox="0 0 207.318 36.428">
+          <path id="Path_50" data-name="Path 50" d="M-638.394,333.982h-28.38a2.661,2.661,0,0,0-.243-.23,2.173,2.173,0,0,1-.838-2.523,1.908,1.908,0,0,1,1.923-1.323,1.88,1.88,0,0,0,1.989-2.12,1.887,1.887,0,0,0-2.141-1.885c-1.825-.009-3.65.007-5.474-.006a1.857,1.857,0,0,1-2.07-2.036,1.873,1.873,0,0,1,2.076-2.041c.688-.014,1.377.02,2.064,0a1.868,1.868,0,0,0,1.972-1.967,1.879,1.879,0,0,0-2.009-2.02c-1.5-.016-2.995-.066-4.486.016a2.64,2.64,0,0,1-2.642-1.263v-1.614A2.54,2.54,0,0,1-674.1,313.7c1.583.074,3.172.039,4.758.009a1.837,1.837,0,0,0,1.826-1.927,1.857,1.857,0,0,0-1.8-2.04c-.717-.034-1.437,0-2.155-.014-1.416-.022-2.152-.735-2.145-2.067.007-1.314.755-2.008,2.191-2.013,1.856-.007,3.712.012,5.568-.009a1.816,1.816,0,0,0,1.888-1.571,1.94,1.94,0,0,0-1.919-2.434c-1.23-.1-1.871-.626-2.014-1.647a1.929,1.929,0,0,1,2.1-2.424c8.681,0,17.362.015,26.042-.015a4.544,4.544,0,0,1,4.308,2.505q3.757,6.627,7.6,13.2a4.619,4.619,0,0,1-.027,5.065q-3.627,6.184-7.141,12.435A6.206,6.206,0,0,1-638.394,333.982Zm-8.995-7.265c1.467,0,2.933-.01,4.4,0a3.01,3.01,0,0,0,2.857-1.656c1.454-2.575,2.935-5.135,4.423-7.691a2.967,2.967,0,0,0-.01-3.217q-2.255-3.872-4.471-7.766a2.858,2.858,0,0,0-2.64-1.554q-4.535,0-9.069,0a2.907,2.907,0,0,0-2.7,1.611q-2.189,3.858-4.427,7.688a3.02,3.02,0,0,0,.009,3.3q2.218,3.789,4.38,7.612a3.013,3.013,0,0,0,2.845,1.677C-650.322,326.707-648.855,326.716-647.388,326.716Z" transform="translate(676.652 -297.554)" fill="#356efd"/>
+          <text id="WayToWork" transform="translate(58.318 27)" font-size="30" font-family="FormaDJRDisplay-Medium, Forma DJR Display" font-weight="500"><tspan x="0" y="0">WayToWork</tspan></text>
+        </svg>
+        
+        
+           
+      </a>
+
+      <div class = "logoutdiv">
+        <a  href= "/logout/" class="button-2">Logout</a>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+
+    </div>
+  </nav>   -->
+  {% endif %}
+
+<div>
+  {% block content %} 
+  {% endblock %}
+</div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    
