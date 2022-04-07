@@ -26,6 +26,8 @@
         
         </div>
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+        <br>
         
         <!-- todo -->
         <a href="/todo/"><svg xmlns="http://www.w3.org/2000/svg" width="40.14" height="35.56" viewBox="0 0 40.14 35.56">
@@ -38,7 +40,7 @@
           </svg>
           
         </a>
-        <br>
+        <br>    <br>
 
         <!-- notepad -->
         <a href="/notepad/"><svg xmlns="http://www.w3.org/2000/svg" width="40.169" height="38.095" viewBox="0 0 40.169 38.095">
@@ -61,10 +63,10 @@
             <text id="Task_Manager" data-name="Task Manager" transform="translate(0 18)" font-size="20" font-family="FormaDJRDisplay-Medium, Forma DJR Display" font-weight="500"><tspan x="0" y="0">Notepad</tspan></text>
           </svg>
         </a>
-        <br>
+        <br>    <br>
         
         <!-- timer -->
-        <a href="/login/"><svg xmlns="http://www.w3.org/2000/svg" width="40.14" height="35.722" viewBox="0 0 40.14 35.722">
+        <a href="/timer/"><svg xmlns="http://www.w3.org/2000/svg" width="40.14" height="35.722" viewBox="0 0 40.14 35.722">
         <path id="Path_47" data-name="Path 47" d="M-317.452,504.528H-343.7a6.969,6.969,0,0,1-6.945-6.977V475.782a6.968,6.968,0,0,1,6.945-6.976h26.25a6.968,6.968,0,0,1,6.945,6.976v21.769A6.969,6.969,0,0,1-317.452,504.528ZM-343.7,472.9a2.88,2.88,0,0,0-2.87,2.883v21.769a2.88,2.88,0,0,0,2.87,2.884h26.25a2.88,2.88,0,0,0,2.87-2.884V475.782a2.88,2.88,0,0,0-2.87-2.883Z" transform="translate(350.647 -468.806)" fill="#356efd"/>
         <path id="Path_48" data-name="Path 48" d="M-274.311,514.126l-5.56-.072a2.586,2.586,0,0,0-.932-1.047l.011-7.763a1.419,1.419,0,0,0-1.388-1.449h0a1.419,1.419,0,0,0-1.39,1.444l-.011,7.884a2.641,2.641,0,0,0-1.037,2.112,2.564,2.564,0,0,0,2.512,2.613,2.465,2.465,0,0,0,1.9-.907l5.864.076h.018a1.418,1.418,0,0,0,1.39-1.429A1.421,1.421,0,0,0-274.311,514.126Z" transform="translate(302.27 -496.304)" fill="#356efd" stroke="#356efd" stroke-width="1"/>
         <rect id="Rectangle_25" data-name="Rectangle 25" width="4.84" height="2.074" rx="1.037" transform="translate(17.65 25.158)" fill="#eef3fa"/>
@@ -75,18 +77,18 @@
           </svg>
           
         </a>
-
-
        
-        
+        <br>
+
         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-    
+        
+        <div class="btn-holder">
 
         {% if user.is_authenticated %}
         <a  href= "/logout/" class="button-3" style="align-items: baseline;">Logout</a>
         {% endif %}
 
-
+        </div>
     
         
     </div>

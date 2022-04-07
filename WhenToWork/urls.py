@@ -3,7 +3,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
 from register import views as v
-from .views import cross_off, dashboard, delete, editor, delete_document, todo, uncross, viewPage
+from django.contrib.auth.views import LoginView
+from .views import cross_off, dashboard, delete, editor, delete_document, todo, uncross, viewPage, timer
 
 urlpatterns = [
     path('notepad/', editor, name='editor'),
@@ -15,8 +16,8 @@ urlpatterns = [
     path('uncross/<int:list_id>', uncross, name = "uncross"),
     path("register/", v.register, name="register"),
     path('', include("django.contrib.auth.urls")),
+    path('', LoginView.as_view(template_name='registration/login.html'), name="login"),
     path('dashboard/', dashboard, name="dashboard"),
     path('view/', viewPage, name="view"),
-
+    path('timer/', timer, name='timer'),
 ]
-

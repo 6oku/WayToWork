@@ -19,7 +19,6 @@
 
 
 .layout{
-    
     top:0;
     bottom: 0;
     padding: 3vh;
@@ -28,9 +27,11 @@
     height: 95vh;
     background-color: white;
     border-radius: 1rem;
-    overflow-x: hidden;
     box-shadow: 0 3px 10px rgba(36, 35, 35, 0.24);
-
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    justify-content:space-evenly;
 }
 
 h4{
@@ -63,29 +64,25 @@ hr{
 width: 100%;
 }
 
-.sideNavLogout{
-    bottom: 0;
-    position: absolute;
-}
 
 
-.button-3:disabled {
+.layout .btn-holder .button-3:disabled {
     pointer-events: none;
   }
   
-  .button-3:hover {
+  .layout .btn-holder .button-3:hover {
     color:  #EEF3FA;
     background-color:#356efd;
     box-shadow: rgba(68, 68, 68, 0.096) 0 8px 15px;
     transform: translateY(-2px);
   }
   
-  .button-3:active {
+  .layout .btn-holder .button-3:active {
     box-shadow: none;
     transform: translateY(0);
   }
   
-  .button-3 {
+  .layout .btn-holder .button-3 {
     appearance: none;
     background-color: transparent;
     border: 3px solid #356efd;
@@ -109,10 +106,14 @@ width: 100%;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width:90%;
+    width: 90%;
     will-change: transform;
   }
 
 
+.layout .btn-holder{
+    justify-content: flex-end;
+    display: flex;
+    align-items:flex-end;
 
-
+}

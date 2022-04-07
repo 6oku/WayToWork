@@ -102,3 +102,5 @@ def viewPage(response):
     return render(response, 'view.html')
 
 
+def timer(request):
+        return render(request, 'timer.html')

@@ -26,8 +26,3 @@ class List(models.Model):
 
     def __str__(self):
             return self.item + ' | ' + str(self.completed)
-
-
-
-
-

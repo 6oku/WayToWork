@@ -1,0 +1,56 @@
+.box {
+    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: none;
+}
+
+.box .allTime {
+    align-items: center;
+    display: flex;
+    font-size: 4rem;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    color: black;
+}
+
+.box .allTime .wp {
+    align-items: center;
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 0 .375em;
+}
+
+.box .allTime .wp span {
+    font-size: 3rem;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.instruction {
+    font-size: .5rem;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: lightgrey;
+}
