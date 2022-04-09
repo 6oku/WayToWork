@@ -1,4 +1,3 @@
-from unicodedata import name
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from urllib.parse import urlencode
@@ -25,7 +24,7 @@ def editor(request):
             document.content = content
             document.save()
             document.user = request.user
-            request.user.add(document)
+            request.user.notepadname.add(document)
 
             return redirect('./?docid=%i' % docid)
         else:
@@ -66,8 +65,7 @@ def todo(request):
            t=List(item=n)
            t.save
            request.user.todolist.add(t,bulk=False)
-           
-           
+
            all_items = List.objects.all
 
            messages.success(request, ('Item Has Been Added To List!'))

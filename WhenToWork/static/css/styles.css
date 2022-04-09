@@ -31,7 +31,6 @@
     flex-wrap: wrap;
     flex-direction: column;
     display: flex;
-    justify-content:space-evenly;
 }
 
 h4{
@@ -117,3 +116,4 @@ width: 100%;
     align-items:flex-end;
 
 }
+

@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Document(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, default ='New Note', null=False)
     content = models.TextField(blank=True, null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='notepadname', null=True)
 
@@ -16,7 +16,7 @@ class Document(models.Model):
 
 
 class List(models.Model):
-    item = models.CharField(max_length=200)
+    item = models.CharField(max_length=200, default='New Item')
     completed = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='todolist', null=True)
 

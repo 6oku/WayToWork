@@ -4,78 +4,6 @@
     box-sizing: border-box;
 }
 
-.sidenavb{
-  width: 25vh;
-  position: fixed;
-  z-index:1;
-  top:3vh;
-  padding: 1rem;
-  bottom: 3vh;
-  left:3vh;
-  margin: 30px;
-  background-color: white;
-  overflow-x: hidden;
-  box-shadow: 0 3px 10px rgba(36, 35, 35, 0.24);
-}
-
-.sidenav {
-    width:7.5vh;
-    position: fixed;
-    z-index:1;
-    top:0;
-    bottom: 0;
-    left:0;
-    background-color: white;
-    overflow-x: hidden;
-}
-
-.sidenav a {
-    padding:6px 8px 6px 16px;
-    text-decoration: none;
-    font-size:25px;
-    color: rgb(0, 0, 0);
-    display:block;
-}
-
-.sidenav a:hover{
-    color: rgb(0, 0, 0);
-    background-color:#EEF3FA;
-}	
-
-.main{
-    margin-left:160px;
-    padding: 0px 10px;
-}
-
-.logoutdiv{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.logoutdiv a:hover{
-    transform: translateY(-2px);
-}
-
-
-.rightlogin{
-        padding: 15px;
-	  }
-
-.loginTwo{
-	overflow: hidden;
-    margin: auto;
-    position: absolute;
-    left:10rem;
-    right:10rem;
-    top: 45rem;
-    bottom:20rem;
-    height: 20rem;
-    padding: 2rem;
-    border-radius: 1rem ;  
-	background: linear-gradient(168.53deg, rgba(234, 255, 254, 0.5) 0%, rgba(201, 217, 241, 0.5) 97.46%);
-	border: 1px solid rgba(255, 255, 255, 0.5);
-}
 
 
 html{
@@ -87,9 +15,6 @@ html{
   width: 100%;
   height: 100%;
 } 
-/* #EEF3FA
-background: radial-gradient(rgb(255, 255, 255), #4879f5);
-background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
 
 .floatRight{
   float: right;
@@ -100,13 +25,27 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
     overflow: hidden;
     display: block;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 16vh;
     height: 57vh;
     width: 100vh;
     padding: 0rem;
     border-radius: 1rem ;  
     box-shadow: 0 3px 10px rgba(36, 35, 35, 0.24);
     
+}
+
+.greypanelThree{
+  background-color:white;
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  margin-top: 3vh;
+  height: 94vh;
+  left: 25vh;
+  width: 135vh;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(36, 35, 35, 0.24);
 }
 
 .logologin{
@@ -131,7 +70,6 @@ h1{
 }
 
 
-/* CSS */
 .button-28 {
     appearance: none;
     background-color: transparent;
@@ -163,100 +101,6 @@ h1{
   .textarea{
     height: 15vh;
   }
-  
-  .button-28:disabled {
-    pointer-events: none;
-  }
-  
-  .button-28:hover {
-    color:  #EEF3FA;
-    background-color:#356efd;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-  
-  .button-28:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
-
-  .panelSide{
-    background-color:white;
-    overflow: hidden;
-    display: block;
-    margin: auto;
-    margin-top: 3vh;
-    height: 94vh;
-    left: 3vh;
-    width: 29vh;
-    padding: 10rem;
-    border-radius: 1rem;
-    box-shadow: 0 3px 10px rgba(36, 35, 35, 0.24);
-  }
-
-
-  .greypanelThree{
-    background-color:white;
-    overflow: hidden;
-    display: block;
-    margin: auto;
-    margin-top: 3vh;
-    height: 94vh;
-    left: 25vh;
-    width: 135vh;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 3px 10px rgba(36, 35, 35, 0.24);
-  }
-
-  .greypanelTwo{
-    background-color:white;
-    overflow: hidden;
-    display: block;
-    margin: auto;
-    margin-top: 3vh;
-    height: 85vh;
-    width: 165vh;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 3px 10px rgba(36, 35, 35, 0.24);
-  }
-
-.hasp{
-  font-family: aktiv-grotesk, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-  
-/* .documents{
-  font-family: aktiv-grotesk, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-}
-
-
-
-.documents:hover{
-  font-family: aktiv-grotesk, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  transform: translateY(-2px);
-  background-color: #262525;
-  color: red;
-} */
-
-.Vector_Smart_Object {
-  background-image: url("Vector Smart Object.png");
-  position: absolute;
-  left: 316px;
-  top: 622px;
-  width: 1169px;
-  height: 856px;
-  z-index: 2;
-}
-
 
 .button-2:disabled {
   pointer-events: none;
@@ -273,6 +117,7 @@ h1{
   box-shadow: none;
   transform: translateY(0);
 }
+
 
 .button-2 {
   appearance: none;
@@ -302,9 +147,6 @@ h1{
   will-change: transform;
 }
 
-.iconsidenav{
-  margin: .75rem;
-}
 
 .button-22:disabled {
   pointer-events: none;
@@ -362,26 +204,6 @@ hr {
   border-width: 1px;
 }
 
-.bottomzero{
-  bottom: 0;
-  position:static;
-}
-
-.asd{
-  font-family: forma-djr-display, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1rem;
-  color: black;
-}
-
-.dsa{
-  font-family: forma-djr-display, sans-serif;
-font-weight: 600;
-font-style: normal;
-font-size: 1rem;
-  color: black;
-}
 
 h2{
   font-family: forma-djr-display, sans-serif;
@@ -389,4 +211,62 @@ font-weight: 600;
 font-style: normal;
 font-size: .5rem;
   color: black;
+}
+
+title{
+  font-family: forma-djr-display, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black
+}
+
+
+.rightlogin{
+  padding: 15px;
+}
+
+
+.button-4:disabled {
+  pointer-events: none;
+}
+
+.button-4:hover {
+  color:  #EEF3FA;
+  background-color:#356efd;
+  box-shadow: rgba(68, 68, 68, 0.096) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-4:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+.button-4 {
+  appearance: none;
+  background-color: transparent;
+  border: 3px solid #356efd;
+  border-radius: 30px;
+  box-sizing: border-box;
+  color: #356efd;
+  cursor: pointer;
+  display: inline-block;
+  font-family: forma-djr-display, sans-serif;
+  font-size: 1.75vh;
+  font-weight: 600;
+  line-height: normal;
+  margin: 1rem;
+  min-height: 1rem;
+  min-width: 2rem;
+  outline: none;
+  padding: .5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 19vh;
+  will-change: transform;
 }
