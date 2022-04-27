@@ -181,13 +181,13 @@
             let countDownBox = document.querySelector(".allTime");
             if (countDownBox.innerHTML == 'Finished!') {
                 countDownBox.innerHTML = `
-                <div class="wp days"></div>
+                // <div class="wp days"></div>
                 <div class="wp hrs"></div>
                 <div class="wp min"></div>
                 <div class="wp sec"></div>
                 `
             }
-            let daysBox = document.querySelector(".days");
+            // let daysBox = document.querySelector(".days");
             let hrsBox = document.querySelector(".hrs");
             let minBox = document.querySelector(".min");
             let secBox = document.querySelector(".sec");
@@ -203,16 +203,17 @@
                 let distance = countDownDate - now;
                 
                 
-                let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                // let days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                daysBox.innerHTML = days + "<span>Days</span>";
+                // daysBox.innerHTML = days + "<span>Days</span>";
                 hrsBox.innerHTML = hours + "<span>Hours</span>";
                 minBox.innerHTML = minutes + "<span>Minutes</span>";
                 secBox.innerHTML = seconds + "<span>Seconds</span>";
                 
+                // Output Text
                 if (distance < 0) {
                     clearInterval(timer);
                     countDownBox.innerHTML = "Finished!";
